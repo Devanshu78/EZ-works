@@ -22,7 +22,7 @@ const InputBox = () => {
       return;
     }
 
-    const api = "https://test.ezworks.ai/api ";
+    const api = "https://test.ezworks.ai/api";
 
     await axios
       .post(api, { email: email.Email })

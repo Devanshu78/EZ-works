@@ -48,7 +48,11 @@ const App = () => {
       </div>
 
       <div id="rightBox" className="p-4 max-w-screen-lg">
-        <Card />
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+          {CardData.map((card) => (
+            <Card key={card.id} imgSrc={card.imgSrc} title={card.title} />
+          ))}
+        </div>
       </div>
       {width < 650 && <InputBox />}
     </div>
